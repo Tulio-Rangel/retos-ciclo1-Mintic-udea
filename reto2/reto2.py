@@ -1,3 +1,5 @@
+import operator
+
 estudiante1 = {
     'cédula': '1234564567',
     'nombre': 'Juancho',
@@ -11,7 +13,7 @@ estudiante2 = {
 estudiante3 = {
     'cédula': '1000564566',
     'nombre': 'Clara',
-    'nota_fundamentos': 4.5
+    'nota_fundamentos': 4.6
 }
 estudiante4 = {
     'cédula': '1300564367',
@@ -33,3 +35,13 @@ estudiante7 = {
     'nombre': 'Diógenes',
     'nota_fundamentos': 3.8
 }
+
+grupo = [estudiante1, estudiante2, estudiante3, estudiante4, estudiante5, estudiante6, estudiante7]
+notas = []
+
+for i in grupo:
+    notas.append(i['nota_fundamentos'])
+
+promedio = float(sum(notas)/len(notas))
+
+print(max(grupo, key=operator.itemgetter('nota_fundamentos'))['cédula'])
