@@ -50,7 +50,8 @@ def calcular_promedio_y_cuadro_honor(grupo):
     aux = 0
     aux2 = 0
     aux3 = 0
-    cuadro_honor = {}
+    #cuadro_honor = {}
+    cuadro = []
 
     for i in team:
         if i['nota_fundamentos'] > primero:
@@ -59,7 +60,8 @@ def calcular_promedio_y_cuadro_honor(grupo):
         elif i['nota_fundamentos'] == primero:
             aux = aux + [i['cédula']]
 
-    cuadro_honor[1] = aux
+    #cuadro_honor[1] = aux
+    cuadro.append(aux)
 
     for i in team:
         if i['nota_fundamentos'] > segundo and i['nota_fundamentos'] != primero:
@@ -68,7 +70,8 @@ def calcular_promedio_y_cuadro_honor(grupo):
         elif i['nota_fundamentos'] == segundo:
             aux2 = aux2 [i['cédula']]
 
-    cuadro_honor[2] = aux2
+    #cuadro_honor[2] = aux2
+    cuadro.append(aux2)
 
     for i in team:
         if i['nota_fundamentos'] > tercero and i['nota_fundamentos'] not in (primero, segundo):
@@ -77,7 +80,10 @@ def calcular_promedio_y_cuadro_honor(grupo):
         elif i['nota_fundamentos'] == tercero:
             aux3 = aux3 + [i['cédula']]
 
-    cuadro_honor[3] = aux3
+    #cuadro_honor[3] = aux3
+    cuadro.append(aux3)
+
+    cuadro_honor = {1:cuadro[0], 2:cuadro[1], 3:cuadro[2]}
 
     print([promedio, cuadro_honor])
     
