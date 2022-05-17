@@ -83,100 +83,130 @@ letras_i = []
 letras_n = []
 letras_g = []
 letras_o = []
-
+mini = []
 a = 0
 while len(letras_b) < 5:
     a = random.choice(balotas)
     if "B" in a:
         letras_b.append(a)
+        mini.append(a)
         balotas.remove(a)
     elif "I" in a:
         letras_i.append(a)
+        mini.append(a)
         balotas.remove(a)
     elif "N" in a:
         letras_n.append(a)
+        mini.append(a)
         balotas.remove(a)
     elif "G" in a:
         letras_g.append(a)
+        mini.append(a)
         balotas.remove(a)
     elif "O" in a:
         letras_o.append(a)
+        mini.append(a)
         balotas.remove(a)
 
 while len(letras_i) < 5:
     a = random.choice(balotas)
     if "B" in a:
         letras_b.append(a)
+        mini.append(a)
         balotas.remove(a)
     elif "I" in a:
         letras_i.append(a)
+        mini.append(a)
         balotas.remove(a)
     elif "N" in a:
         letras_n.append(a)
+        mini.append(a)
         balotas.remove(a)
     elif "G" in a:
         letras_g.append(a)
+        mini.append(a)
         balotas.remove(a)
     elif "O" in a:
         letras_o.append(a)
+        mini.append(a)
         balotas.remove(a)
 
 while len(letras_g) < 5:
     a = random.choice(balotas)
     if "B" in a:
         letras_b.append(a)
+        mini.append(a)
         balotas.remove(a)
     elif "I" in a:
         letras_i.append(a)
+        mini.append(a)
         balotas.remove(a)
     elif "N" in a:
         letras_n.append(a)
+        mini.append(a)
         balotas.remove(a)
     elif "G" in a:
         letras_g.append(a)
+        mini.append(a)
         balotas.remove(a)
     elif "O" in a:
         letras_o.append(a)
+        mini.append(a)
         balotas.remove(a)
 
 while len(letras_o) < 5:
     a = random.choice(balotas)
     if "B" in a:
         letras_b.append(a)
+        mini.append(a)
         balotas.remove(a)
     elif "I" in a:
         letras_i.append(a)
+        mini.append(a)
         balotas.remove(a)
     elif "N" in a:
         letras_n.append(a)
+        mini.append(a)
         balotas.remove(a)
     elif "G" in a:
         letras_g.append(a)
+        mini.append(a)
         balotas.remove(a)
     elif "O" in a:
         letras_o.append(a)
+        mini.append(a)
         balotas.remove(a)
 
 while len(letras_n) < 4:
     a = random.choice(balotas)
     if "B" in a:
         letras_b.append(a)
+        mini.append(a)
         balotas.remove(a)
     elif "I" in a:
         letras_i.append(a)
+        mini.append(a)
         balotas.remove(a)
     elif "N" in a:
         letras_n.append(a)
+        mini.append(a)
         balotas.remove(a)
     elif "G" in a:
         letras_g.append(a)
+        mini.append(a)
         balotas.remove(a)
     elif "O" in a:
         letras_o.append(a)
+        mini.append(a)
         balotas.remove(a)
+
+balotas_minimas = tuple(mini)
 
 print(letras_b)
 print(letras_i)
 print(letras_n)
 print(letras_g)
 print(letras_o)
+print (mini)
+print(balotas_minimas)
+
