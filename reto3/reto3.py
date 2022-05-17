@@ -85,7 +85,7 @@ letras_g = []
 letras_o = []
 
 a = 0
-for i in range(10):
+while len(letras_b) < 5 and len(letras_i) < 5 and len(letras_g) < 5 and len(letras_o) < 5 and len(letras_n) < 4:
     a = random.choice(balotas)
     if "B" in a:
         letras_b.append(a)
