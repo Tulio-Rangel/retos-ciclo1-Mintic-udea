@@ -124,5 +124,4 @@ while len(letras_n) < 4:
     bingo()
 
 balotas_minimas = tuple(mini)
-
 print(balotas_minimas)
